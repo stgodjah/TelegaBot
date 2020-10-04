@@ -25,7 +25,7 @@ $config = require __DIR__ . '/config.php';
 try {
     // Create Telegram API object
     $telegram = new Longman\TelegramBot\Telegram($config['api_key'], $config['bot_username']);
-
+    $telegram->useGetUpdatesWithoutDatabase();
     /**
      * Check `hook.php` for configuration code to be added here.
      */
