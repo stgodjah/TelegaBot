@@ -24,6 +24,8 @@ namespace Longman\TelegramBot\Commands\SystemCommands;
 
 use Longman\TelegramBot\Commands\SystemCommand;
 use Longman\TelegramBot\Entities\ServerResponse;
+use Longman\TelegramBot\Commands\UserCommand;
+use Longman\TelegramBot\Entities\Keyboard;
 use Longman\TelegramBot\Exception\TelegramException;
 
 class StartCommand extends SystemCommand
@@ -63,11 +65,22 @@ class StartCommand extends SystemCommand
     {
         // If you use deep-linking, get the parameter like this:
         // $deep_linking_parameter = $this->getMessage()->getText(true);
+        $keyboard = new Keyboard(
+            ['Сделать мне клад' => 'A'],
+            'B',
+            ['C', 'D']
+        );
+
+        $res_keyboard = $keyboard->setResizeKeyboard(true)
+            ->setOneTimeKeyboard(true)
+            ->setSelective(false);
 
         return $this->replyToChat(
             'Здравствуй дядька или тётка!' . PHP_EOL .
             'Я тебе продам по позже тех наркотиков, что хочешь.' . PHP_EOL . 
-						'Но пока, я в разработке.'
+						'Но пока, я в разработке.' , [
+                            'reply_markup' => $res_keyboard,
+                        ]
         );
     }
 }
