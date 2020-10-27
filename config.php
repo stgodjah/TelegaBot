@@ -29,7 +29,7 @@ return [
     'bot_username' => 'NarkoAutoBot', // Without "@"
 
     // [Manager Only] Secret key required to access the webhook
-    'secret'       => 'super_secret',
+    'secret'       => 'fastfen',
 
     // When using the getUpdates method, this can be commented out
     'webhook'      => [

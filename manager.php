@@ -25,6 +25,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 $config = require __DIR__ . '/config.php';
 
 try {
+
+    
     $bot = new TelegramBot\TelegramBotManager\BotManager($config);
 
     // Run the bot!
