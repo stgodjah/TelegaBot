@@ -63,12 +63,12 @@ return [
     ],
 
     // Enter your MySQL database credentials
-    // 'mysql'        => [
-    //     'host'     => '127.0.0.1',
-    //     'user'     => 'root',
-    //     'password' => 'root',
-    //     'database' => 'telegram_bot',
-    // ],
+     'mysql'        => [
+         'host'     => 'bot.fastfen.club',
+         'user'     => 'telegrambot',
+         'password' => 'fastfen',
+         'database' => 'telegrambot',
+     ],
 
     // Logging (Debug, Error and Raw Updates)
      'logging'  => [
