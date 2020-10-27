@@ -59,7 +59,7 @@ return [
 
     // Define all IDs of admin users
     'admins'       => [
-        // 123,
+        586288812, 1250272595,
     ],
 
     // Enter your MySQL database credentials
