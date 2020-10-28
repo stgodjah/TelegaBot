@@ -18,7 +18,8 @@
     ],
     "require": {
         "php-telegram-bot/telegram-bot-manager": "^1.4",
-        "longman/telegram-bot": "dev-develop as 0.59"
+        "longman/telegram-bot": "dev-develop as 0.59",
+        "monolog/monolog": "^2.1"
     },
     "require-dev": {
         "php-parallel-lint/php-parallel-lint": "^1.2",
