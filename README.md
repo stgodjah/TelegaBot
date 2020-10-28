@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/php-telegram-bot/example-bot)
+
 # PHP Telegram Bot Example
 
 > :construction: Work In Progress :construction:
