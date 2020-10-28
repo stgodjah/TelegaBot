@@ -7,8 +7,9 @@ $config = require __DIR__ . '/config.php';
 
 try { 
     $telegram = new Longman\TelegramBot\Telegram($config['api_key'], $config['bot_username']);
-    //$telegram->
-
+    $result = $telegram->getVersion();
+    echo $result;
+    
 } catch (Longman\TelegramBot\Exception\TelegramException $e) {
     // Log telegram errors
     Longman\TelegramBot\TelegramLog::error($e);
