@@ -1,7 +1,7 @@
 {
-    "name": "telegram-bot/example-bot",
+    "name": "btcrelax/bitganjbot",
     "type": "project",
-    "description": "PHP Telegram Bot Example",
+    "description": "PHP Telegram Bot for sale drugs",
     "keywords": ["telegram", "bot", "example"],
     "license": "MIT",
     "homepage": "https://github.com/php-telegram-bot/example-bot",
