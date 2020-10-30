@@ -66,9 +66,8 @@ class StartCommand extends SystemCommand
         // If you use deep-linking, get the parameter like this:
         // $deep_linking_parameter = $this->getMessage()->getText(true);
         $keyboard = new Keyboard(
-            ['Сделать мне клад' => 'A'],
-            'B',
-            ['C', 'D']
+            ['Сделать мне клад'],
+            ['Посмотреть что есть готовое вокруг меня']
         );
 
         $res_keyboard = $keyboard->setResizeKeyboard(true)
@@ -77,8 +76,8 @@ class StartCommand extends SystemCommand
 
         return $this->replyToChat(
             'Здравствуй дядька или тётка!' . PHP_EOL .
-            'Я тебе продам по позже тех наркотиков, что хочешь.' . PHP_EOL . 
-						'Но пока, я в разработке.' , [
+            'Я тебе продам наркотиков. Что хочешь, новую зкладку,' . PHP_EOL . 
+						'или глянуть что уже есть вокруг тебя?' , [
                             'reply_markup' => $res_keyboard,
                         ]
         );
